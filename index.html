@@ -1,0 +1,681 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>ROADMAP :- IIT CHENNAI</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="e4ccf842-1557-40f2-a1b1-78a9e014924f" class="page sans"><header><h1 class="page-title">ROADMAP :- IIT CHENNAI</h1><p class="page-description"></p></header><div class="page-body"><p id="bda240eb-a1d5-4064-a1e5-e3fc46f85d93" class="">
+</p><p id="0dbc79cf-9ba4-47b2-98e0-1125878cc511" class="">
+</p><p id="ea4174e2-01d0-44a2-83b4-bfaf0a161a84" class="">After clearing the JEE Advanced exam, the process of admission into IIT Chennai involves several steps:</p><p id="d2666fc3-113e-4e51-bd9e-4e087192ebde" class=""><strong>1. </strong><span style="border-bottom:0.05em solid"><strong>JEE Advanced Exam:</strong></span></p><ul id="1343948a-f874-48da-a580-cae3bc34ea55" class="bulleted-list"><li style="list-style-type:disc">You need to qualify for the JEE Advanced exam by meeting the cutoff marks set by the conducting authority.</li></ul><p id="2cb87d5c-d094-48fa-bd6b-1c1b2f540035" class=""><strong>2. </strong><span style="border-bottom:0.05em solid"><strong>Counseling and Seat Allocation:</strong></span></p><ul id="ee91382e-05b5-43c9-ab38-c6d7ed8f9cb1" class="bulleted-list"><li style="list-style-type:disc">Candidates who qualify for JEE Advanced are eligible for counseling conducted by the Joint Seat Allocation Authority (JoSAA).</li></ul><ul id="50ce8778-08c0-4a62-88de-63088d87351a" class="bulleted-list"><li style="list-style-type:disc">During counseling, you&#x27;ll have the opportunity to select your preferred IITs and courses based on your rank and availability of seats.</li></ul><p id="b315bf63-4722-4316-98e1-34057eafd456" class=""><strong>3. </strong><span style="border-bottom:0.05em solid"><strong>Choice Filling and Locking:</strong></span></p><ul id="3095d4dd-b66b-4c40-a287-a0c18a4bbff5" class="bulleted-list"><li style="list-style-type:disc">You&#x27;ll need to fill in your choices of institutes and courses in the order of preference during the counseling process.</li></ul><ul id="33ae3b88-f63c-4d8d-863f-1343a037048f" class="bulleted-list"><li style="list-style-type:disc">After selecting your choices, make sure to lock them within the specified time frame.</li></ul><p id="a675f6da-9958-4beb-a582-10b14006f1fe" class=""><strong>4. </strong><span style="border-bottom:0.05em solid"><strong>Seat Allotment:</strong></span></p><ul id="7ce52d25-83e6-4d45-aba7-892518d481a3" class="bulleted-list"><li style="list-style-type:disc">Based on your JEE Advanced rank, choices filled, and availability of seats, you&#x27;ll be allotted a seat in one of the IITs, including IIT Chennai.</li></ul><p id="b7a7fa8f-e0d9-4834-88b8-64df847bf787" class=""><strong>5. </strong><span style="border-bottom:0.05em solid"><strong>Reporting to Allotted Institute:</strong></span></p><ul id="f794ad9a-7ded-48c1-a587-1894ba62a17c" class="bulleted-list"><li style="list-style-type:disc">Once you&#x27;re allocated a seat in IIT Chennai, you need to report to the institute within the specified time frame.</li></ul><ul id="813c17ee-da85-4760-9e26-e9353b8c52c7" class="bulleted-list"><li style="list-style-type:disc">Complete the admission formalities and pay the required fees to secure your seat.</li></ul><p id="7eca83e9-c697-4676-bdb4-1a30a170603b" class=""><span style="border-bottom:0.05em solid"><strong>Score Required for IIT Chennai:</strong></span></p><ul id="bab223be-f92d-477a-83fe-68da30f61677" class="bulleted-list"><li style="list-style-type:disc">The score required to get into IIT Chennai varies from year to year and depends on factors like the difficulty level of the exam and the number of applicants.</li></ul><ul id="60c3e421-bbb0-4bcd-bc3d-d14983399746" class="bulleted-list"><li style="list-style-type:disc">Generally, to secure admission into top IITs like IIT Chennai, you&#x27;ll need to aim for a high JEE Advanced rank, preferably within the top few thousand ranks.</li></ul><hr id="06d90226-9603-40ee-9f32-8cc1b2c478b2"/><h2 id="502bbf1d-7031-4f8d-acc2-d52a453dfc7c" class=""><strong>Courses Offered at IIT Madras:</strong></h2><ul id="bfac85cd-2bde-4ed6-abbc-c7d4149739f6" class="bulleted-list"><li style="list-style-type:disc"><span style="border-bottom:0.05em solid"><strong>Undergraduate Programs:</strong></span><ul id="3ba3bb09-26e2-418f-8ff9-6720c115c3c1" class="bulleted-list"><li style="list-style-type:circle">Bachelor of Technology (B.Tech) in various disciplines like Computer Science, Electrical Engineering, Mechanical Engineering, etc.</li></ul><ul id="5d499787-caad-490f-a4a0-6a3d5bc6f760" class="bulleted-list"><li style="list-style-type:circle">Dual Degree Programs (B.Tech + M.Tech) in specific fields.</li></ul></li></ul><ul id="479ed4a3-5961-482b-b434-a931d31d1332" class="bulleted-list"><li style="list-style-type:disc"><span style="border-bottom:0.05em solid"><strong>Postgraduate Programs:</strong></span><ul id="e80d45ea-a80d-42e2-ad52-817483d99af3" class="bulleted-list"><li style="list-style-type:circle">Master of Technology (M.Tech) in diverse specializations.</li></ul><ul id="3dee32f3-88af-451c-bd89-96b2f928eca4" class="bulleted-list"><li style="list-style-type:circle">Master of Science (<a href="http://m.sc/">M.Sc</a>) in disciplines such as Physics, Chemistry, Mathematics, etc.</li></ul><ul id="fb358341-d067-4420-9f8a-638ab7c80a74" class="bulleted-list"><li style="list-style-type:circle">Master of Business Administration (MBA) and Executive MBA programs.</li></ul><ul id="15ca5630-67a0-49d6-a4b8-a7e1bb71cb53" class="bulleted-list"><li style="list-style-type:circle">Master of Arts (M.A) in Development Studies.</li></ul></li></ul><ul id="85079771-c647-434a-893b-87d1143cb1fb" class="bulleted-list"><li style="list-style-type:disc"><span style="border-bottom:0.05em solid"><strong>Research Programs:</strong></span><ul id="9d1dc8ba-baa0-4673-9d7c-eefe2f0a8063" class="bulleted-list"><li style="list-style-type:circle">Doctor of Philosophy (Ph.D.) in Engineering, Sciences, Humanities, and Management.</li></ul></li></ul><ul id="d506814a-103f-4edb-b184-e0ba39f2f0c3" class="bulleted-list"><li style="list-style-type:disc"><span style="border-bottom:0.05em solid"><strong>Integrated Programs:</strong></span><ul id="e1bf328c-eea7-49b0-a437-c05d48dc4554" class="bulleted-list"><li style="list-style-type:circle">Integrated M.Tech-Ph.D. programs.</li></ul><ul id="bc09aba3-d78c-44ad-9a80-1ba3bef6c077" class="bulleted-list"><li style="list-style-type:circle">Integrated M.A-Ph.D. programs.</li></ul></li></ul><ul id="8d5d24ab-e8eb-401f-99f0-1e2b22d805e3" class="bulleted-list"><li style="list-style-type:disc"><span style="border-bottom:0.05em solid"><strong>Other Specialized Courses:</strong></span><ul id="7df729c5-89e2-4aaf-b93e-f994104729b7" class="bulleted-list"><li style="list-style-type:circle">Interdisciplinary courses like Data Science, Biotechnology, and Computational Engineering.</li></ul><ul id="7d551ff4-7496-45cd-8dbc-c7447ecc3910" class="bulleted-list"><li style="list-style-type:circle">Continuing Education and Skill Development programs.</li></ul><hr id="d3083eca-2990-4066-bfc4-2a1a7c1206d3"/><h2 id="b1514cc8-67c4-4883-88be-bfa5092b9c77" class=""><strong>Courses Related to AIML at IIT Madras:</strong></h2><ul id="6eb98bce-25f2-4fcf-8124-8e5206f786be" class="bulleted-list"><li style="list-style-type:circle"><span style="border-bottom:0.05em solid"><strong>Bachelor of Technology (B.Tech):</strong></span><ul id="0fb01f7c-3036-4f8a-9605-e93adb341761" class="bulleted-list"><li style="list-style-type:square">Specializations in Computer Science and Engineering (CSE) often include courses on Artificial Intelligence (AI) and Machine Learning (ML).</li></ul></li></ul><ul id="8e0176b9-c91b-47b9-9391-f84f9fa6da85" class="bulleted-list"><li style="list-style-type:circle"><span style="border-bottom:0.05em solid"><strong>Master of Technology (M.Tech):</strong></span><ul id="f1b2bcdf-8cd1-4513-b616-d1929c2570f5" class="bulleted-list"><li style="list-style-type:square">Specializations in Computer Science and Engineering, focusing on AI and ML.</li></ul><ul id="90ae9378-08ac-4137-bb0c-f65ebf4d855f" class="bulleted-list"><li style="list-style-type:square">M.Tech programs in Data Science and Machine Learning.</li></ul></li></ul><ul id="eed0ab4d-0e9a-411f-ad63-2709bc5a5e13" class="bulleted-list"><li style="list-style-type:circle"><span style="border-bottom:0.05em solid"><strong>Master of Science (</strong></span><span style="border-bottom:0.05em solid"><a href="http://m.sc/"><strong>M.Sc</strong></a></span><span style="border-bottom:0.05em solid"><strong>):</strong></span><ul id="3a1bfed5-05aa-40ed-b695-356ce947b47a" class="bulleted-list"><li style="list-style-type:square">Programs in Computational and Data Sciences, which may cover topics related to AI and ML.</li></ul></li></ul><ul id="2c17710e-9e25-4b24-bad2-11bdb0e970de" class="bulleted-list"><li style="list-style-type:circle"><span style="border-bottom:0.05em solid"><strong>Research Programs (Ph.D.):</strong></span><ul id="8537fb24-9887-4163-97ac-57f02fe7e88b" class="bulleted-list"><li style="list-style-type:square">Opportunities for research in Artificial Intelligence, Machine Learning, and related fields under various departments like Computer Science, Electrical Engineering, and Mathematics.</li></ul></li></ul><hr id="632c559b-4857-439e-8ff1-46f7d77ca954"/><p id="289cf1c0-a239-4cad-89dd-df3bab4081c1" class=""><strong>Fees Structure at IIT Madras:</strong></p><ul id="1fff26fb-32fc-4fc7-86b2-789daa529b8b" class="bulleted-list"><li style="list-style-type:circle"><strong>Tuition Fees:</strong> Around ₹2 lakhs per year.</li></ul><ul id="65836b04-499b-4916-ab4f-f49b2e8a856c" class="bulleted-list"><li style="list-style-type:circle"><strong>Hostel Fees:</strong> Approximately ₹20,000 to ₹30,000 per semester.</li></ul><ul id="3cc97239-62dc-40f6-978c-4ce8631d809d" class="bulleted-list"><li style="list-style-type:circle"><strong>Mess Charges:</strong> Roughly ₹15,000 to ₹20,000 per semester.</li></ul><ul id="eca28f25-ce4f-4860-a5ef-a58af3730216" class="bulleted-list"><li style="list-style-type:circle"><strong>Other Expenses:</strong> Additional expenses for books, stationery, and personal needs may vary but estimate around ₹10,000 to ₹20,000 per year.</li></ul><hr id="bc3c40e4-b388-47ab-8ec4-6cd9fe2a0842"/><p id="15335d63-069b-46d2-8e32-43bb4512cc9a" class="">
+</p><p id="2998b1fc-d0ad-4812-961e-7c643db0b380" class="">
+</p></li></ul></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
